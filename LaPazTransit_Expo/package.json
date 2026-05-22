@@ -31,14 +31,15 @@
   },
   "devDependencies": {
     "@types/react": "~19.1.17",
+    "cross-env": "^10.1.0",
     "typescript": "~5.9.3"
   },
   "scripts": {
-    "start": "expo start",
+    "start": "cross-env EXPO_NO_CACHE=1 expo start",
     "reset-project": "node ./scripts/reset-project.js",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web",
+    "android": "cross-env EXPO_NO_CACHE=1 expo start --android",
+    "ios": "cross-env EXPO_NO_CACHE=1 expo start --ios",
+    "web": "cross-env EXPO_NO_CACHE=1 expo start --web",
     "lint": "expo lint"
   },
   "private": true

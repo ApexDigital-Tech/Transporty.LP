@@ -1,0 +1,16 @@
+# Local env files
+.env
+.env-local
+.env.*.local
+
+# Expo directories
+.expo/
+dist/
+web-build/
+
+# Node modules
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
